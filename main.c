@@ -9,7 +9,7 @@ int* sys_random(int size){
 	int *buffer;
 	buffer = malloc(sizeof(int) * size );
 	
-	printf("initiating...\n");
+	printf("initiating...this may take several minites\n");
 	
 	FILE* file = fopen("/dev/random", "r");
 	fread(buffer, sizeof(int), size ,file);
