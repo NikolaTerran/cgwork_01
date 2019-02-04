@@ -11,7 +11,7 @@ int* sys_random(int size){
 	
 	printf("initiating...this may take several minites\n");
 	
-	FILE* file = fopen("/dev/random", "r");
+	FILE* file = fopen("/dev/urandom", "r");
 	fread(buffer, sizeof(int), size ,file);
 	
 	//close(file);
